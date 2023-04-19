@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url(css/fonts/Satoshi-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(css/fonts/Satoshi-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(css/fonts/Satoshi-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Junicode-Regular";
+  src: url(css/fonts/Junicode-Regular.ttf) format("truetype");
+}
+
+nav {
+  color: #EBE4E2;
+  font-family: "Satoshi-Light", sans-serif;
+  line-height: 32px;
+  background-color: #231C1A;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+
+nav a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+
+  margin: 5px;
+
+  font-size: 24px;
+  font-weight: lighter;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#blog {
+  margin-left: 5%;
+}
+#a-propos {
+  margin-left: 10%;
+}
+#archive {
+  margin-left: 20%;
+}
+
+/* nav items changing color when hovered */
+#blog:hover {
+    color: #FD3200;
+}
+#a-propos:hover {
+    color: #00802A;
+}
+#archive:hover {
+    color: #3D66FF;
+}
+
+#logo {
+  width: 24px;
+  margin-right: 20%;
+}
+/* CSS styles for responsive design */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  nav a {
+    margin: 5px;
+  }
+  #blog {
+    margin-left: 10;
+    margin-right: auto;
+  }
+  #a-propos {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  #archive {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  #logo {
+    width: 24px;
+    margin-right: 10;
+  }
+}
+</style>

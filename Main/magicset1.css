@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url(css/fonts/Satoshi-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(css/fonts/Satoshi-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(css/fonts/Satoshi-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Junicode-Regular";
+  src: url(css/fonts/Junicode-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: #231C1A;
+}
+
+nav {
+  color: #EBE4E2;
+  font-family: "Satoshi-Light", sans-serif;
+  line-height: 32px;
+
+  display: flex;
+  margin-top: 40px;
+  margin-left: 66px;
+  margin-right: 66px;
+  justify-content: space-between;
+
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: lighter;
+  transition: color 0.3s ease;
+  color: inherit;
+  text-decoration: none;
+}
+
+#blog {
+
+}
+#a-propos {
+  margin-right: 130px;
+}
+#archive {
+  margin-right: 58px;
+}
+
+#logo {
+  width: 24px;
+
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* nav items changing color when hovered */
+#blog:hover {
+    color: #FD3200;
+}
+#a-propos:hover {
+    color: #00802A;
+}
+#archive:hover {
+    color: #3D66FF;
+}
+
+/* CSS styles for responsive design */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  nav a {
+    margin: 5;
+  }
+  #blog {
+    margin-left: 10;
+    margin-right: auto;
+  }
+  #a-propos {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  #archive {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  #logo {
+    width: 24px;
+    margin-right: 10;
+  }
+}
